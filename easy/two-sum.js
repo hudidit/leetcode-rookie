@@ -21,7 +21,7 @@
  * 优点：只遍历一次
  * 缺点：map 占用内存
  */
-var twoSum1 = function(nums, target) {
+const twoSum1 = function(nums, target) {
   const visited = new Map();
   const len = nums.length;
   for (let i = 0; i < len; i++) {
@@ -39,7 +39,7 @@ var twoSum1 = function(nums, target) {
 * 优点：没有创建新的对象或数组，内存占用少
 * 缺点：因为用了 indexOf, 本质上还是两次遍历
 */
-var twoSum2 = function(nums, target) {
+const twoSum2 = function(nums, target) {
   const len = nums.length;
   let i = 0;
   let curr = nums.shift();
