@@ -24,7 +24,8 @@
 
 /**
  * 解
- * 双指针，一个指向 haystack 的字符，一个指向 needle 的字符
+ * 双指针，一个指向 haystack 的字符，一个指向 needle 的字符。
+ * 如果允许使用 String.prototype.slice 方法，则仅需一个指针。
  */
 const strStr = function(haystack, needle) {
   // 根据题目要求，needle 为空时返回 0
